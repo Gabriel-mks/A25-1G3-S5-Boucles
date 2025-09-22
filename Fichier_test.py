@@ -33,3 +33,4 @@ def test_environnement_optimal_2():
 
     # Assert : vérifier si le réultat obtenu correspond au résultat attendu
     assert resultat_attendu == resultat_obtenu
+

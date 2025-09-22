@@ -12,10 +12,10 @@ def test_environnement_optimal():
 
 
     # Act : appeler la fonction
-    resultat_attendu = environnement_optimal(temperature, poussiere, humidite)
+    resultat_obtenu = environnement_optimal(temperature, poussiere, humidite)
 
     # Assert : vérifier si le réultat obtenu correspond au résultat attendu
-    assert  resultat_attendu == resultat_attendu
+    assert  resultat_attendu == resultat_obtenu
 
 
 
@@ -23,13 +23,13 @@ def test_environnement_optimal():
 def test_environnement_optimal_2():
         # Arrange : préparer les valeurs des variables d'entrées et le résultat attendu
 
-        temperature = 30
-        poussiere = "faible"
-        humidite = 40
-        resultat_attendu = "Environnement non optimal"
+    temperature = 30
+    poussiere = "faible"
+    humidite = 40
+    resultat_attendu = "Environnement non optimal"
 
-        # Act : appeler la fonction
-        resultat_attendu = environnement_optimal(temperature, poussiere, humidite)
+    # Act : appeler la fonction
+    resultat_obtenu = environnement_optimal(temperature, poussiere, humidite)
 
-        # Assert : vérifier si le réultat obtenu correspond au résultat attendu
-        assert resultat_attendu == resultat_attendu
+    # Assert : vérifier si le réultat obtenu correspond au résultat attendu
+    assert resultat_attendu == resultat_obtenu

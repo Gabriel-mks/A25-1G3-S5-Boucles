@@ -1,0 +1,35 @@
+import pytest  # importe le module pytest pour faire des testes unitaires
+from ExDebug1 import environnement_optimal # lien avec la fonction de notre fichier
+
+# test unitaire pour la fonction environnement_optimal
+def test_environnement_optimal():
+    # Arrange : préparer les valeurs des variables d'entrées et le résultat attendu
+
+    temperature = 25
+    poussiere = "faible"
+    humidite = 40
+    resultat_attendu = "Tout est sous contrôle!"
+
+
+    # Act : appeler la fonction
+    resultat_attendu = environnement_optimal(temperature, poussiere, humidite)
+
+    # Assert : vérifier si le réultat obtenu correspond au résultat attendu
+    assert  resultat_attendu == resultat_attendu
+
+
+
+# Test unitaire pour la fonction environnement_optimal
+def test_environnement_optimal_2():
+        # Arrange : préparer les valeurs des variables d'entrées et le résultat attendu
+
+        temperature = 30
+        poussiere = "faible"
+        humidite = 40
+        resultat_attendu = "Environnement non optimal"
+
+        # Act : appeler la fonction
+        resultat_attendu = environnement_optimal(temperature, poussiere, humidite)
+
+        # Assert : vérifier si le réultat obtenu correspond au résultat attendu
+        assert resultat_attendu == resultat_attendu
